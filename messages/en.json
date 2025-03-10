@@ -1,0 +1,284 @@
+{
+  "NavbarTop": {
+    "home": "Home",
+    "curriculum": "Curriculum",
+    "certificates": "Certificates",
+    "jobs": "Professional Experience",
+    "contact": "Contact"
+  },
+  "LandingSection1": {
+    "title": "Hello World",
+    "subtitle": "I am ",
+    "button": "Download CV",
+    "p11": "I am a developer ",
+    "p12": " with experience in",
+    "p13": " and",
+    "p14": " specialized in web applications and integration ",
+    "p15": " in ",
+    "p16": " and",
+    "p17": " in ",
+    "p21": " With knowledge in managing ",
+    "p22": " auto deployment with ",
+    "p23": " and configuring ",
+    "p24": " as a reverse proxy"
+  },
+  "Footer": {
+    "copyright": " All rights reserved."
+  },
+  "NotFound": {
+    "title": "Page Not Found",
+    "subtitle": "Oops! It seems you've traveled to the unknown.",
+    "button": "Back to Home",
+    "footer": "Andrei Florian Bratila. All rights reserved."
+  },
+  "Tecnologies": {
+    "title": "Technologies and Libraries",
+    "subtitle": "Explore my work tools",
+    "showLegend": "Show Legend",
+    "legend": "Legend",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "server": "Server",
+    "framework": "Framework",
+    "libreria": "Library",
+    "lenguaje": "Language",
+    "servidor": "Server",
+    "herramienta": "Tool"
+  },
+  "Jobs": {
+    "title": "Professional Experience",
+    "description": "Some of the companies and projects I have worked on.",
+    "link": "See all jobs",
+    "items": [
+      {
+        "company": "WowWebGroup",
+        "position": "FullStack Developer",
+        "period": "November 2024 - Present",
+        "title": "Admin Panel Development",
+        "location": "Remote",
+        "description": "Creation of an admin panel focused on database security and web data management. Implementation of auto deployment on VPS using Nginx and webhooks.",
+        "image": "/images/empresas/wow-web-group.webp"
+      },
+      {
+        "company": "WowWebGroup",
+        "position": "FullStack Developer",
+        "period": "October 2024",
+        "title": "Website and Panel Development",
+        "location": "Remote",
+        "description": "Development of the website from a Figma design and creation of an admin panel to modify website parameters. Configuration of PostgreSQL on server with auto deployment on VPS.",
+        "image": "/images/empresas/wow-web-group.webp"
+      },
+      {
+        "company": "Private Development",
+        "position": "FullStack & SmartContract Developer",
+        "period": "January 2024 - October 2024",
+        "title": "Web3 Integration with Blockchain",
+        "location": "Remote",
+        "description": "Development of a DApp connected to Metamask on the BSC network. Creation of smart contracts in Solidity, including NFTs and token management. Implementation of auto deployment on VPS with webhooks and an automated smart contract deployment system."
+      },
+      {
+        "company": "La Pizza de Hugo",
+        "position": "FullStack & SmartContract Developer",
+        "period": "August 2023",
+        "title": "Website Creation and Design",
+        "location": "Remote",
+        "description": "Responsible for the design and development of the company’s website.",
+        "image": "/images/empresas/la-pizza-de-hugo.avif"
+      }
+    ]
+  },
+
+  "Certificates": {
+    "title": "Certificates",
+    "description": "Explore my certifications and professional achievements",
+    "link": "View all certificates",
+    "items": [
+      {
+        "titleBlue": "Modern JavaScript:",
+        "title": " Guide to mastering the language",
+        "description": "Learn modern JavaScript from scratch to an advanced level, mastering key concepts like promises, DOM manipulation, and ESNext.",
+        "tecnologias": [
+          "JS",
+          "ESNext",
+          "DOM",
+          "Node.js",
+          "Fetch API",
+          "Promises"
+        ],
+        "hours": "20.5 hours",
+        "url": "https://www.udemy.com/certificate/UC-a7d54d55-9b88-4cda-b2e5-6f6b996e4edc/"
+      },
+      {
+        "titleBlue": "Next.js:",
+        "title": " The React framework for production",
+        "description": "Master Next.js from scratch and learn how to build production-optimized applications with rendering strategies, authentication, deployment, and more.",
+        "tecnologias": ["Next.js", "React", "TypeScript", "SSR", "ISR", "SSG"],
+        "hours": "36.5 hours",
+        "url": "https://www.udemy.com/certificate/UC-1ddab3f0-2635-48ea-b27a-4f32c502d7f1/"
+      },
+      {
+        "titleBlue": "Docker:",
+        "title": " Practical guide for developers",
+        "description": "Learn Docker from scratch and master the creation, management, and deployment of containers, including Dockerfiles, Docker Compose, and automation with GitHub Actions.",
+        "tecnologias": [
+          "Docker",
+          "Docker CLI",
+          "Docker Compose",
+          "Dockerfiles",
+          "Kubernetes",
+          "GitHub Actions"
+        ],
+        "hours": "14 hours",
+        "url": "https://www.udemy.com/certificate/UC-13e4bd2d-1806-44e2-bc67-d6a2f30d76f4/"
+      },
+      {
+        "titleBlue": "Complete Bootcamp:",
+        "title": " Blockchain/Web3 from beginner to expert",
+        "description": "Master blockchain technology from scratch, learn to program Smart Contracts with Solidity, create ERC-20 tokens and NFTs, develop DApps with React, and deploy projects on Blockchain.",
+        "tecnologias": [
+          "Blockchain",
+          "Solidity",
+          "Ethereum",
+          "BSC",
+          "MATIC",
+          "Smart Contracts"
+        ],
+        "hours": "42.5 hours",
+        "url": "https://www.udemy.com/certificate/UC-447ef0a0-d03d-4154-8073-1e2f717d0dae/"
+      },
+      {
+        "titleBlue": "Game Development in JS/TS:",
+        "title": " The Complete Guide (w/ Phaser 3)",
+        "description": "Learn how to develop video games from scratch with Phaser and JavaScript. Create clones of Flappy Bird, the Chrome Dino Game, and a platformer with levels and custom attacks.",
+        "tecnologias": [
+          "JavaScript",
+          "TypeScript",
+          "Phaser",
+          "HTML5",
+          "Canvas",
+          "Physics Engine"
+        ],
+        "hours": "27 hours",
+        "url": "https://www.udemy.com/certificate/UC-c7b9fe67-69ca-43c1-b36c-f36a17f503aa/"
+      },
+      {
+        "titleBlue": "SQL from scratch:",
+        "title": " Your practical guide with PostgreSQL",
+        "description": "Learn how to design, manage, and query relational databases with PostgreSQL. Master SQL statements, triggers, functions, stored procedures, database design, and more.",
+        "tecnologias": [
+          "PostgreSQL",
+          "SQL",
+          "PL/pgSQL",
+          "Docker",
+          "NeonDB",
+          "ER Diagrams"
+        ],
+        "hours": "16 hours",
+        "url": "https://www.udemy.com/certificate/UC-17421f0f-ec1e-454e-8c7c-3534fd34a719/"
+      },
+      {
+        "titleBlue": "React:",
+        "title": " From beginner to expert (Hooks and MERN)",
+        "description": "Learn React from scratch using Hooks and functional components. Includes FullStack development with MERN and unit testing.",
+        "tecnologias": [
+          "React",
+          "Hooks",
+          "Functional Components",
+          "Context API",
+          "Redux",
+          "MongoDB"
+        ],
+        "hours": "54 hours",
+        "url": "https://www.udemy.com/certificate/UC-c021dc91-d43a-4c33-a970-fc72b0fdd127/"
+      },
+      {
+        "titleBlue": "React PRO:",
+        "title": " Take your skills to the next level",
+        "description": "Improve your React skills with Hooks and learn advanced concepts like TypeScript, PWA, deployments to NPM, Storybook, and more.",
+        "tecnologias": [
+          "React",
+          "TypeScript",
+          "PWA",
+          "NPM",
+          "Storybook",
+          "Formik"
+        ],
+        "hours": "26.5 hours",
+        "url": "https://www.udemy.com/certificate/UC-ac15288a-e75a-44ec-916b-dfb103066be6/"
+      },
+      {
+        "titleBlue": "Zustand:",
+        "title": " State management for React",
+        "description": "Zustand is meant to be a direct replacement for Redux, Redux Toolkit, and React's ContextAPI.",
+        "tecnologias": ["Zustand", "TypeScript"],
+        "hours": "6 hours",
+        "url": "https://cursos.devtalles.com/certificates/vnxzuvtwqs"
+      },
+      {
+        "titleBlue": "TypeScript:",
+        "title": " Your complete guide and reference manual",
+        "description": "Learn TypeScript from scratch and improve your JavaScript code with this type-based language, ideal for working with Angular, React, Node, and more.",
+        "tecnologias": ["TypeScript", "JavaScript"],
+        "hours": "9 hours",
+        "url": "https://www.udemy.com/certificate/UC-78634e0f-8726-4e87-9609-bf511642f44c/"
+      },
+      {
+        "titleBlue": "Nest:",
+        "title": " Scalable backend development with Node",
+        "description": "Learn NestJS from scratch and build robust backend applications with modular architecture and best practices. Master TypeORM, JWT authentication, WebSockets, and deployment with Docker.",
+        "tecnologias": [
+          "NestJS",
+          "TypeScript",
+          "TypeORM",
+          "MongoDB",
+          "Docker",
+          "JWT",
+          "WebSockets"
+        ],
+        "hours": "25 hours",
+        "url": "https://www.udemy.com/certificate/UC-06c4e735-1dc5-4dbd-82a3-c4268b3001c0/"
+      },
+      {
+        "titleBlue": "Legacy:",
+        "title": " Node: From beginner to expert",
+        "description": "Learn Node.js from scratch with practical exercises and real-world applications. Master REST, WebSockets, databases, and cloud deployment.",
+        "tecnologias": [
+          "Node.js",
+          "JWT",
+          "Express",
+          "YARGS",
+          "REST API",
+          "Socket Server"
+        ],
+        "hours": "29 hours",
+        "url": "https://www.udemy.com/certificate/UC-7e7b92c4-8d07-4426-9ce2-69f42b6d13c7/"
+      }
+    ]
+  },
+  "Contact": {
+    "title": "Contact",
+    "subtitle": "If you have any questions, comments, or suggestions, feel free to write to me.",
+    "informacion": {
+      "title": "My Contact Details",
+      "description": "Here are my contact details in case you want to get in touch with me.",
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "social": "Social Networks",
+      "phone_value": "643069912",
+      "location_value": "Tarragona, Spain",
+      "phoneCopied": "Phone copied to clipboard",
+      "emailCopied": "Email copied to clipboard"
+    },
+    "form": {
+      "title": "Send me a Message",
+      "name": "Your Name",
+      "subject": "Subject",
+      "email": "Your Email",
+      "message": "Your Message",
+      "send": "Send",
+      "errorTraduction": "An error occurred while sending your message. Please try again later.",
+      "successTraduction": "Thank you for your message! I will reply as soon as possible."
+    }
+  }
+}
