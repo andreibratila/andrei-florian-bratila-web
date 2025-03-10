@@ -28,14 +28,14 @@ jobs:
           cache: 'npm'
 
       # Crear archivo .env.local con las variables y secrets
-      - name: Crear archivo .env.local
+      - name: Crear archivo .env
         run: |
-          echo "NEXT_PUBLIC_EMAIL=${{ vars.NEXT_PUBLIC_EMAIL }}" >> .env.local
-          echo "NEXT_PUBLIC_GITHUB_URL=${{ vars.NEXT_PUBLIC_GUITHUB_URL }}" >> .env.local
-          echo "NEXT_PUBLIC_LINKEDIN_URL=${{ vars.NEXT_PUBLIC_LINKEDIN_URL }}" >> .env.local
-          echo "NEXT_PUBLIC_PHONE=${{ vars.NEXT_PUBLIC_PHONE }}" >> .env.local
-          echo "NEXT_PUBLIC_X_URL=${{ vars.NEXT_PUBLIC_X_URL }}" >> .env.local
-          echo "EMAIL_PASS=${{ secrets.EMAIL_PASS }}" >> .env.local
+          echo "NEXT_PUBLIC_EMAIL=${{ vars.NEXT_PUBLIC_EMAIL }}" >> .env
+          echo "NEXT_PUBLIC_GITHUB_URL=${{ vars.NEXT_PUBLIC_GUITHUB_URL }}" >> .env
+          echo "NEXT_PUBLIC_LINKEDIN_URL=${{ vars.NEXT_PUBLIC_LINKEDIN_URL }}" >> .env
+          echo "NEXT_PUBLIC_PHONE=${{ vars.NEXT_PUBLIC_PHONE }}" >> .env
+          echo "NEXT_PUBLIC_X_URL=${{ vars.NEXT_PUBLIC_X_URL }}" >> .env
+          echo "EMAIL_PASS=${{ secrets.EMAIL_PASS }}" >> .env
 
       - run: npm i
       - run: npm run build --if-present
