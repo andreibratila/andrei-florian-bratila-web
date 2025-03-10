@@ -31,7 +31,7 @@ jobs:
       - name: Crear archivo .env
         run: |
           echo "NEXT_PUBLIC_EMAIL=${{ vars.NEXT_PUBLIC_EMAIL }}" >> .env
-          echo "NEXT_PUBLIC_GITHUB_URL=${{ vars.NEXT_PUBLIC_GUITHUB_URL }}" >> .env
+          echo "NEXT_PUBLIC_GITHUB_URL=${{ vars.NEXT_PUBLIC_GITHUB_URL }}" >> .env
           echo "NEXT_PUBLIC_LINKEDIN_URL=${{ vars.NEXT_PUBLIC_LINKEDIN_URL }}" >> .env
           echo "NEXT_PUBLIC_PHONE=${{ vars.NEXT_PUBLIC_PHONE }}" >> .env
           echo "NEXT_PUBLIC_X_URL=${{ vars.NEXT_PUBLIC_X_URL }}" >> .env

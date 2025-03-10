@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 import { HoverMouseButtonType } from '@/app/[locale]/components/cursor/HoverMouseButtonType';
 import { DivButtonMouse } from '@/components';
-import { EMAIL_ENV, GUITHUB_URL_ENV, LINKEDIN_URL_ENV } from '@/config';
+import { EMAIL_ENV, GITHUB_URL_ENV, LINKEDIN_URL_ENV } from '@/config';
 import type { LocaleI } from '@/i18n';
 
 import { SalutingHand } from '../Saludo';
@@ -57,7 +57,7 @@ export const Section1 = ({ locale }: Readonly<{ locale: LocaleI }>) => {
 
             <div className="flex space-x-fl-xs">
               <HoverMouseButtonType>
-                <a target="_blank" rel="noopener" href={GUITHUB_URL_ENV}>
+                <a target="_blank" rel="noopener" href={GITHUB_URL_ENV}>
                   <DivButtonMouse
                     durationAnimation={0.4}
                     className="grid h-full w-full place-items-center rounded-xl border-2 border-dark-bg px-fl-xs py-fl-3xs shadow-[3px_3px_0px_black] dark:border-light-bg dark:shadow-[3px_3px_0px_#F7F7F7]"
@@ -136,33 +136,3 @@ export const Section1 = ({ locale }: Readonly<{ locale: LocaleI }>) => {
     </Section1Client>
   );
 };
-{
-  /* <p>
-              Soy un desarrollador{' '}
-              <span className="font-bold text-blue-500">FullStack</span> con
-              experiencia en
-              <span className="text-indigo-500"> TypeScript</span>,
-              <span className="text-indigo-500"> Next.js</span> y
-              <span className="text-indigo-500"> Nest.js</span>, especializado
-              en aplicaciones web e integración
-              <span className="font-medium text-green-500"> Web3</span>(
-              <span className="font-medium text-blue-600">smart contracts</span>{' '}
-              en
-              <span className="italic text-gray-800 dark:text-gray-200">
-                {' '}
-                Solidity
-              </span>{' '}
-              y<span className="font-medium text-orange-500"> Metamask</span> en
-              la
-              <span className="text-yellow-500"> BSC</span>).
-            </p>
-            <p className="mt-fl-md">
-              Con conocimientos en administración de
-              <span className="font-medium text-red-500"> VPS</span>, auto
-              despliegue con
-              <span className="font-medium text-purple-500"> webhooks</span> y
-              configuración de
-              <span className="font-medium text-gray-500"> Nginx</span> como
-              proxy inverso.
-            </p> */
-}

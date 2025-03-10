@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl';
 import { HoverMouseButtonType } from '@/app/[locale]/components/cursor/HoverMouseButtonType';
 import {
   EMAIL_ENV,
-  GUITHUB_URL_ENV,
+  GITHUB_URL_ENV,
   LINKEDIN_URL_ENV,
   X_URL_ENV,
 } from '@/config';
@@ -80,7 +80,7 @@ export const InformacionContacto = () => {
                 <FaGithub size={25} />{' '}
               </HoverMouseButtonType>
             </a>
-            <a href={GUITHUB_URL_ENV} target="_blank" rel="noopener">
+            <a href={GITHUB_URL_ENV} target="_blank" rel="noopener">
               <HoverMouseButtonType>
                 <FaLinkedin size={25} />{' '}
               </HoverMouseButtonType>
