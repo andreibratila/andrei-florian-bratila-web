@@ -11,7 +11,6 @@ on:
 
 jobs:
   build:
-
     runs-on: self-hosted
 
     strategy:
@@ -21,10 +20,22 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        
+    # Crear archivo .env.local con las variables y secrets
+    - name: Crear archivo .env.local
+      run: |
+        echo "EMAIL=${{ vars.NEXT_PUBLIC_EMAIL }}" >> .env.local
+        echo "GITHUB_URL=${{ vars.NEXT_PUBLIC_GUITHUB_URL }}" >> .env.local
+        echo "LINKEDIN_URL=${{ vars.NEXT_PUBLIC_LINKEDIN_URL }}" >> .env.local
+        echo "PHONE=${{ vars.NEXT_PUBLIC_PHONE }}" >> .env.local
+        echo "X_URL=${{ vars.NEXT_PUBLIC_X_URL }}" >> .env.local
+        echo "EMAIL_PASS=${{ secrets.EMAIL_PASS }}" >> .env.local
+        
     - run: npm i
     - run: npm run build --if-present
