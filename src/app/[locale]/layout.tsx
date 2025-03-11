@@ -28,7 +28,7 @@ export async function generateMetadata({
     },
     description: t('description'),
     keywords: t('keywords'),
-    metadataBase: new URL(`${BASE_URL_ENV}/${locale}/`),
+    metadataBase: new URL(BASE_URL_ENV),
     alternates: {
       languages: {
         en: `${BASE_URL_ENV}/en`,
