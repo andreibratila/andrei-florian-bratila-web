@@ -15,12 +15,11 @@ import type { LocaleI } from '@/i18n';
 
 import { SalutingHand } from '../Saludo';
 import { LinkCustom } from '../ui/LinkCustom';
-import { Section1Client } from './Section1Client';
 
 export const Section1 = ({ locale }: Readonly<{ locale: LocaleI }>) => {
   const t = useTranslations('LandingSection1'); // Traducciones específicas para esta página
   return (
-    <Section1Client>
+    <section className="flex flex-col pt-fl-3xl 2xl:container max-2xl:mx-fl-3xs-3xl">
       <div className="flex flex-col place-items-center font-bold 2xl:grid 2xl:grid-cols-3">
         <div className="col-span-2 flex flex-col">
           <div className="text-fl-3xl">
@@ -140,6 +139,6 @@ export const Section1 = ({ locale }: Readonly<{ locale: LocaleI }>) => {
           priority
         />
       </div>
-    </Section1Client>
+    </section>
   );
 };

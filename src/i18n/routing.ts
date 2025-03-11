@@ -40,12 +40,12 @@ export const routing = defineRouting({
       ro: '/experienta',
       ca: '/experiencia',
     },
-    '/cv': {
-      es: '/curriculum',
-      en: '/cv',
-      ro: '/cv',
-      ca: '/curriculum',
-    },
+    // '/cv': {
+    //   es: '/curriculum',
+    //   en: '/cv',
+    //   ro: '/cv',
+    //   ca: '/curriculum',
+    // },
     '/jobs': {
       es: '/trabajos',
       en: '/jobs',
