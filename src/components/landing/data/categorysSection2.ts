@@ -82,12 +82,12 @@ export const frontendTechnologies: TecnologiesI[] = [
     category: categorysSection2.lenguaje.color,
   },
   {
-    title: 'Tailwind CSS',
+    title: 'Tailwind',
     Icon: TailwindSvg,
     category: categorysSection2.libreria.color,
   },
   {
-    title: 'Framer Motion',
+    title: 'Motion',
     Icon: FramerMotionSvg,
     category: categorysSection2.libreria.color,
   },

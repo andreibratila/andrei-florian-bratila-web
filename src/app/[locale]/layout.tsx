@@ -1,3 +1,4 @@
+import { setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
 // import  from './components/ThemeProvider';
@@ -17,15 +18,18 @@ import { LocaleI, routing } from '@/i18n';
 import '../globals.css';
 import { CustomCursor, SmoothScrolling, ThemeProvider } from './components';
 
-export async function generateStaticParams() {
-  const locales = ['en', 'es', 'ro', 'ca']; // Idiomas soportados
-  return locales.map((locale) => ({
-    locale, // Define los parámetros locales
-    params: {
-      locale,
-    },
-  }));
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
 }
+// export async function generateStaticParams() {
+//   const locales = ['en', 'es', 'ro', 'ca']; // Idiomas soportados
+//   return locales.map((locale) => ({
+//     locale, // Define los parámetros locales
+//     params: {
+//       locale,
+//     },
+//   }));
+// }
 
 export default async function LocaleLayout({
   children,
@@ -35,6 +39,8 @@ export default async function LocaleLayout({
   params: Promise<{ locale: LocaleI }>;
 }>) {
   const { locale } = await params;
+  setRequestLocale(locale);
+
   // Ensure that the incoming `locale` is valid
   if (!routing.locales.includes(locale)) {
     notFound();

@@ -1,3 +1,5 @@
+import { setRequestLocale } from 'next-intl/server';
+
 import { ScrollVelocity } from '@/components';
 import {
   Section1,
@@ -14,6 +16,8 @@ export default async function Home({
   params: Promise<{ locale: LocaleI }>;
 }>) {
   const locale = (await params).locale;
+  setRequestLocale(locale);
+
   return (
     <>
       <Section1 locale={locale} />

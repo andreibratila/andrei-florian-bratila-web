@@ -131,6 +131,7 @@ export const Section1 = ({ locale }: Readonly<{ locale: LocaleI }>) => {
           alt="Andrei Florian Bratila"
           width={800}
           height={800}
+          priority
         />
       </div>
     </Section1Client>
