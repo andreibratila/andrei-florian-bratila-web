@@ -22,10 +22,13 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'MetadataHome' });
 
   return {
-    title: t('title'),
+    title: {
+      template: `%s | ${t('title')}`,
+      default: t('title'),
+    },
     description: t('description'),
     keywords: t('keywords'),
-
+    metadataBase: new URL(`${BASE_URL_ENV}/${locale}/`),
     alternates: {
       languages: {
         en: `${BASE_URL_ENV}/en`,
