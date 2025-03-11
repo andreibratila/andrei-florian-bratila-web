@@ -34,8 +34,6 @@ export async function sendEmailAction(
       };
     }
 
-    // Here you would typically save the address to your database
-    console.log('Address submitted:', validatedData.data);
     const { name, email, subject, message } = validatedData.data;
 
     await transporter.sendMail(mailOptions(name, email, subject, message));

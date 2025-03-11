@@ -59,6 +59,7 @@ export const FormClient = ({
           type="text"
           name="name"
           required
+          maxLength={50}
           placeholder={nameTraduction}
           defaultValue={state.inputs?.name}
           className="w-full rounded-lg border p-3"
@@ -70,6 +71,7 @@ export const FormClient = ({
           type="email"
           name="email"
           required
+          maxLength={100}
           placeholder={emailTraduction}
           defaultValue={state.inputs?.email}
           className="w-full rounded-lg border p-3"
@@ -81,6 +83,7 @@ export const FormClient = ({
           type="text"
           name="subject"
           required
+          maxLength={50}
           placeholder={subjectTraduction}
           defaultValue={state.inputs?.subject}
           className="w-full rounded-lg border p-3"
@@ -93,6 +96,7 @@ export const FormClient = ({
           required
           placeholder={messageTraduction}
           defaultValue={state.inputs?.message}
+          maxLength={2000}
           rows={4}
           className="w-full rounded-lg border p-3"
         />
