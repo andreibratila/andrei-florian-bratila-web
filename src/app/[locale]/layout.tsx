@@ -1,7 +1,9 @@
+import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
 import { Toaster } from '@/components/ui/sonner';
+import { BASE_URL_ENV } from '@/config';
 import { LocaleI, routing } from '@/i18n';
 
 import '../globals.css';
@@ -10,28 +12,26 @@ import { CustomCursor, SmoothScrolling, ThemeProvider } from './components';
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
+type PropsMetadata = {
+  params: Promise<{ locale: LocaleI }>;
+};
 export async function generateMetadata({
   params,
-}: Readonly<{
-  params: Promise<{ locale: LocaleI }>;
-}>) {
-  const locale = (await params).locale;
+}: PropsMetadata): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Metadata' });
 
   return {
-    title: t('title'), // Título dinámico según idioma
-    description: t('description'), // Descripción dinámica según idioma
-    keywords: t('keywords'), // Palabras clave dinámicas
-    openGraph: {
-      title: t('title'),
-      description: t('description'),
-      url: `https://example.com/${locale}`,
-      site_name: 'My Website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: t('title'),
-      description: t('description'),
+    title: t('title'),
+    description: t('description'),
+    keywords: t('keywords'),
+
+    alternates: {
+      languages: {
+        en: `${BASE_URL_ENV}/en`,
+        ro: `${BASE_URL_ENV}/ro`,
+        ca: `${BASE_URL_ENV}/ca`,
+      },
     },
   };
 }
