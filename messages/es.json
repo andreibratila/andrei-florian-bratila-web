@@ -1,4 +1,10 @@
 {
+  "MetadataHome": {
+    "title": "Bienvenido a Mi Sitio Web",
+    "description": "Esta es una descripción de ejemplo para mi sitio web en español.",
+    "keywords": "Next.js, React, sitio web, ejemplo"
+  },
+
   "NavbarTop": {
     "home": "Inicio",
     "curriculum": "Currículum",

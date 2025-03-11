@@ -22,5 +22,9 @@ export const CopyToClipboard = ({
     }
   }, [copiedText, textTraduction, copyToClipboard]);
 
-  return <button onClick={() => copyToClipboard(text)}>{children}</button>;
+  return (
+    <button aria-label="Copy Clipboard" onClick={() => copyToClipboard(text)}>
+      {children}
+    </button>
+  );
 };

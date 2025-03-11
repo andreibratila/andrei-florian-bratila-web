@@ -1,4 +1,9 @@
 {
+  "MetadataHome": {
+    "title": "Welcome to My Website",
+    "description": "This is a sample description for my website in English.",
+    "keywords": "Next.js, React, website, example"
+  },
   "NavbarTop": {
     "home": "Home",
     "curriculum": "Curriculum",

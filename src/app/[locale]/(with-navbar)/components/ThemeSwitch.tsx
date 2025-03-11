@@ -20,7 +20,11 @@ export default function ThemeSwitch() {
 
   return (
     <HoverMouseButtonType>
-      <label className="containerDarkMode">
+      <label
+        className="containerDarkMode"
+        htmlFor="toggle"
+        aria-label="toggle-dark-mode"
+      >
         <input
           type="checkbox"
           id="toggle"

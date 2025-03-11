@@ -21,6 +21,7 @@ export const FooterBootonScrollUp = ({
     <HoverMouseButtonType>
       <button
         onClick={scrollToTop}
+        aria-label="Scroll to top"
         className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-blue-700 focus:outline-none"
       >
         {children}

@@ -1,17 +1,6 @@
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
-// import  from './components/ThemeProvider';
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-// Dentro de tu layout o página
 import { Toaster } from '@/components/ui/sonner';
 import { LocaleI, routing } from '@/i18n';
 
@@ -21,16 +10,31 @@ import { CustomCursor, SmoothScrolling, ThemeProvider } from './components';
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
-// export async function generateStaticParams() {
-//   const locales = ['en', 'es', 'ro', 'ca']; // Idiomas soportados
-//   return locales.map((locale) => ({
-//     locale, // Define los parámetros locales
-//     params: {
-//       locale,
-//     },
-//   }));
-// }
+export async function generateMetadata({
+  params,
+}: Readonly<{
+  params: Promise<{ locale: LocaleI }>;
+}>) {
+  const locale = (await params).locale;
+  const t = await getTranslations({ locale, namespace: 'Metadata' });
 
+  return {
+    title: t('title'), // Título dinámico según idioma
+    description: t('description'), // Descripción dinámica según idioma
+    keywords: t('keywords'), // Palabras clave dinámicas
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+      url: `https://example.com/${locale}`,
+      site_name: 'My Website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('title'),
+      description: t('description'),
+    },
+  };
+}
 export default async function LocaleLayout({
   children,
   params,

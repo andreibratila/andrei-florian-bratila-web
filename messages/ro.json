@@ -1,4 +1,9 @@
 {
+  "MetadataHome": {
+    "title": "Bine ați venit pe site-ul meu",
+    "description": "Aceasta este o descriere exemplu pentru site-ul meu în limba română.",
+    "keywords": "Next.js, React, site web, exemplu"
+  },
   "NavbarTop": {
     "home": "Acasă",
     "curriculum": "CV",

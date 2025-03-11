@@ -1,4 +1,9 @@
 {
+  "MetadataHome": {
+    "title": "Benvinguts al meu lloc web",
+    "description": "Aquesta és una descripció d'exemple per al meu lloc web en català.",
+    "keywords": "Next.js, React, lloc web, exemple"
+  },
   "NavbarTop": {
     "home": "Inici",
     "curriculum": "Currículum",
