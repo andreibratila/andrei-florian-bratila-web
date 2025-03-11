@@ -50,14 +50,13 @@ export const CustomCursor = () => {
   }, []);
 
   const isDesktop = useMobileDetect().isDesktop();
-  const cursorVisible = type === 'withBalls' && (
-    <CircleCursor isDesktop={isDesktop} mouseX={mouse.x} mouseY={mouse.y} />
-  );
 
   return (
     <>
       {/* Cursor con efecto de bolas */}
-      <AnimatePresence>{cursorVisible}</AnimatePresence>
+      <AnimatePresence>
+        <CircleCursor isDesktop={isDesktop} mouseX={mouse.x} mouseY={mouse.y} />
+      </AnimatePresence>
 
       {/* Cursor principal con rotación y escalado */}
       <motion.div

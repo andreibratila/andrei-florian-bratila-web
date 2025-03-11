@@ -31,7 +31,7 @@ export const Section1 = ({ locale }: Readonly<{ locale: LocaleI }>) => {
               </span>
               <span className="">
                 {t('subtitle')}{' '}
-                <span className="text-blue-400">Andrei Florian Bratila</span>
+                <span className="text-blue-500">Andrei Florian Bratila</span>
               </span>
             </h1>
           </div>
@@ -57,7 +57,12 @@ export const Section1 = ({ locale }: Readonly<{ locale: LocaleI }>) => {
 
             <div className="flex space-x-fl-xs">
               <HoverMouseButtonType>
-                <a target="_blank" rel="noopener" href={GITHUB_URL_ENV}>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href={GITHUB_URL_ENV}
+                  aria-label="Github"
+                >
                   <DivButtonMouse
                     durationAnimation={0.4}
                     className="grid h-full w-full place-items-center rounded-xl border-2 border-dark-bg px-fl-xs py-fl-3xs shadow-[3px_3px_0px_black] dark:border-light-bg dark:shadow-[3px_3px_0px_#F7F7F7]"
@@ -73,6 +78,7 @@ export const Section1 = ({ locale }: Readonly<{ locale: LocaleI }>) => {
                   target="_blank"
                   rel="noopener"
                   href={LINKEDIN_URL_ENV}
+                  aria-label="Linkedin"
                 >
                   <DivButtonMouse
                     durationAnimation={0.4}
@@ -84,7 +90,7 @@ export const Section1 = ({ locale }: Readonly<{ locale: LocaleI }>) => {
               </HoverMouseButtonType>
 
               <HoverMouseButtonType>
-                <a href={`mailto:${EMAIL_ENV}}`}>
+                <a href={`mailto:${EMAIL_ENV}}`} aria-label="Mail">
                   <DivButtonMouse
                     durationAnimation={0.4}
                     className="grid h-full w-full place-items-center rounded-xl border-2 border-dark-bg px-fl-xs py-fl-3xs shadow-[3px_3px_0px_black] dark:border-light-bg dark:shadow-[3px_3px_0px_#F7F7F7]"

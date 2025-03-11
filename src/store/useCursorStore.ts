@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-type CursorType = 'default' | 'withText' | 'withBig' | 'withBalls' | 'button';
+type CursorType = 'default' | 'withText' | 'withBig' | 'button';
 
 interface CursorState {
   type?: CursorType;

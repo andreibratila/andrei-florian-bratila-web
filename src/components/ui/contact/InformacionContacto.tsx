@@ -75,17 +75,32 @@ export const InformacionContacto = () => {
             {t('informacion.social')}
           </label>
           <div className="flex w-full space-x-fl-xs rounded-lg border border-gray-300 bg-white p-3 dark:border-gray-700 dark:bg-gray-800 dark:text-white">
-            <a href={LINKEDIN_URL_ENV} target="_blank" rel="noopener">
+            <a
+              href={LINKEDIN_URL_ENV}
+              target="_blank"
+              rel="noopener"
+              aria-label="Linkedin"
+            >
               <HoverMouseButtonType>
                 <FaGithub size={25} />{' '}
               </HoverMouseButtonType>
             </a>
-            <a href={GITHUB_URL_ENV} target="_blank" rel="noopener">
+            <a
+              href={GITHUB_URL_ENV}
+              target="_blank"
+              rel="noopener"
+              aria-label="Github"
+            >
               <HoverMouseButtonType>
                 <FaLinkedin size={25} />{' '}
               </HoverMouseButtonType>
             </a>
-            <a href={X_URL_ENV} target="_blank" rel="noopener">
+            <a
+              href={X_URL_ENV}
+              target="_blank"
+              rel="noopener"
+              aria-label="Twitter / X"
+            >
               <HoverMouseButtonType>
                 <FaXTwitter size={25} />{' '}
               </HoverMouseButtonType>
