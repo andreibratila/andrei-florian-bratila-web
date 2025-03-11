@@ -4,6 +4,10 @@
     "description": "This is a sample description for my website in English.",
     "keywords": "Next.js, React, website, example"
   },
+  "OpenGraphImage": {
+    "title": "Andrei Florian Bratila",
+    "subtitle": "Web Developer"
+  },
   "NavbarTop": {
     "home": "Home",
     "curriculum": "Curriculum",

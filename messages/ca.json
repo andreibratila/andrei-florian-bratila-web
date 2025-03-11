@@ -4,6 +4,10 @@
     "description": "Aquesta és una descripció d'exemple per al meu lloc web en català.",
     "keywords": "Next.js, React, lloc web, exemple"
   },
+  "OpenGraphImage": {
+    "title": "Andrei Florian Bratila",
+    "subtitle": "Web Developer"
+  },
   "NavbarTop": {
     "home": "Inici",
     "curriculum": "Currículum",

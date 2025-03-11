@@ -1,4 +1,7 @@
+import { getTranslations } from 'next-intl/server';
 import { ImageResponse } from 'next/og';
+
+import type { LocaleI } from '@/i18n';
 
 // Configuración de la imagen
 export const alt = 'Andrei Florian Bratila - Web Developer';
@@ -7,11 +10,17 @@ export const size = {
   height: 630,
 };
 export const contentType = 'image/png';
-
+type PropsMetadata = {
+  params: Promise<{ locale: LocaleI }>;
+};
 // Generación de la imagen
-export default async function Image() {
+export default async function Image({
+  params,
+}: PropsMetadata): Promise<ImageResponse> {
   // Cargar fuente
+  const locale = (await params).locale;
 
+  const t = await getTranslations({ locale, namespace: 'OpenGraphImage' });
   return new ImageResponse(
     (
       <div
@@ -28,8 +37,8 @@ export default async function Image() {
         }}
       >
         <div style={{ textAlign: 'center' }}>
-          <h1 style={{ marginBottom: 16 }}>Andrei Florian Bratila</h1>
-          <p style={{ fontSize: 32 }}>Web Developer</p>
+          <h1 style={{ marginBottom: 16 }}>{t('title')}</h1>
+          <p style={{ fontSize: 32 }}>{t('subtitle')}</p>
         </div>
       </div>
     ),

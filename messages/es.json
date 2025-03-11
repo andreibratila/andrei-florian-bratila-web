@@ -4,7 +4,10 @@
     "description": "Esta es una descripción de ejemplo para mi sitio web en español.",
     "keywords": "Next.js, React, sitio web, ejemplo"
   },
-
+  "OpenGraphImage": {
+    "title": "Andrei Florian Bratila",
+    "subtitle": "Web Developer"
+  },
   "NavbarTop": {
     "home": "Inicio",
     "curriculum": "Currículum",
