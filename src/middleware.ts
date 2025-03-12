@@ -5,6 +5,11 @@ import { routing } from './i18n/routing';
 export default createMiddleware(routing);
 
 export const config = {
-  // Match only internationalized pathnames
-  matcher: ['/', '/(es|en|ro|ca)/:path*'],
+  matcher: [
+    // Detecta rutas sin prefijo de idioma
+    '/((?!api|_next|_vercel|images|cv|.*\\..*).*)',
+
+    // También sigue detectando rutas con prefijo de idioma
+    '/(es|en|ro|ca)/:path*',
+  ],
 };

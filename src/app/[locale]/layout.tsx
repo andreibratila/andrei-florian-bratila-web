@@ -28,15 +28,25 @@ export async function generateMetadata({
       template: `%s | ${t('title')}`,
       default: t('title'),
     },
+
     description: t('description'),
     keywords: t('keywords'),
     metadataBase: new URL(BASE_URL_ENV),
+    category: 'Web Development',
+    creator: 'Andrei Florian Bratila',
+
+    classification: 'Web Developer',
     alternates: {
       languages: {
         en: `${BASE_URL_ENV}/en`,
         ro: `${BASE_URL_ENV}/ro`,
         ca: `${BASE_URL_ENV}/ca`,
       },
+    },
+    openGraph: {
+      title: t('OpenGraphTitle'),
+      description: t('description'),
+      type: 'website',
     },
   };
 }

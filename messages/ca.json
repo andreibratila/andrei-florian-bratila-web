@@ -1,12 +1,9 @@
 {
   "MetadataHome": {
-    "title": "Benvinguts al meu lloc web",
-    "description": "Aquesta és una descripció d'exemple per al meu lloc web en català.",
-    "keywords": "Next.js, React, lloc web, exemple"
-  },
-  "OpenGraphImage": {
     "title": "Andrei Florian Bratila",
-    "subtitle": "Web Developer"
+    "description": "Sóc un desenvolupador Full Stack especialitzat en Next.js, Solidity i desplegaments amb Github Actions i Nginx. Construeixo solucions web i blockchain eficients i escalables.",
+    "keywords": "Desenvolupament Web, Next.js, React, Solidity, Smart Contracts, Blockchain, Full Stack, Docker, Nginx, PostgreSQL, Web3",
+    "OpenGraphTitle": "Andrei Florian Bratila | Full Stack & Blockchain Developer"
   },
   "NavbarTop": {
     "home": "Inici",

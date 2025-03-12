@@ -1,12 +1,9 @@
 {
   "MetadataHome": {
-    "title": "Welcome to My Website",
-    "description": "This is a sample description for my website in English.",
-    "keywords": "Next.js, React, website, example"
-  },
-  "OpenGraphImage": {
     "title": "Andrei Florian Bratila",
-    "subtitle": "Web Developer"
+    "description": "I am a Full Stack developer specialized in Next.js, Solidity, and deployments with Github Actions and Nginx. I build efficient and scalable web and blockchain solutions.",
+    "keywords": "Web Development, Next.js, React, Solidity, Smart Contracts, Blockchain, Full Stack, Docker, Nginx, PostgreSQL, Web3",
+    "OpenGraphTitle": "Andrei Florian Bratila | Full Stack & Blockchain Developer"
   },
   "NavbarTop": {
     "home": "Home",

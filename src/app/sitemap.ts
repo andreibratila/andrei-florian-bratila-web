@@ -5,68 +5,68 @@ import { BASE_URL_ENV } from '@/config';
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: `${BASE_URL_ENV}/es`,
+      url: `${BASE_URL_ENV}`,
       lastModified: new Date(),
       priority: 1,
       changeFrequency: 'yearly',
       alternates: {
         languages: {
-          en: `${BASE_URL_ENV}/en`,
-          ro: `${BASE_URL_ENV}/ro`,
-          ca: `${BASE_URL_ENV}/ca`,
+          en: `${BASE_URL_ENV}/en/en`,
+          ro: `${BASE_URL_ENV}/ro/ro`,
+          ca: `${BASE_URL_ENV}/ca/ca`,
         },
       },
     },
 
     {
-      url: `${BASE_URL_ENV}/es/contacto`,
+      url: `${BASE_URL_ENV}/contacto`,
       lastModified: new Date(),
       priority: 0.8,
       changeFrequency: 'yearly',
       alternates: {
         languages: {
-          en: `${BASE_URL_ENV}/contact`,
-          ro: `${BASE_URL_ENV}/contact`,
-          ca: `${BASE_URL_ENV}/contacte`,
+          en: `${BASE_URL_ENV}/en/contact`,
+          ro: `${BASE_URL_ENV}/ro/contact`,
+          ca: `${BASE_URL_ENV}/ca/contacte`,
         },
       },
     },
     {
-      url: `${BASE_URL_ENV}/es/certificados`,
+      url: `${BASE_URL_ENV}/certificados`,
       priority: 0.9,
       changeFrequency: 'yearly',
       lastModified: new Date(),
       alternates: {
         languages: {
-          en: `${BASE_URL_ENV}/certificates`,
-          ro: `${BASE_URL_ENV}/certificate`,
-          ca: `${BASE_URL_ENV}/certificats`,
+          en: `${BASE_URL_ENV}/en/certificates`,
+          ro: `${BASE_URL_ENV}/ro/certificate`,
+          ca: `${BASE_URL_ENV}/ca/certificats`,
         },
       },
     },
     {
-      url: `${BASE_URL_ENV}/es/experiencia`,
+      url: `${BASE_URL_ENV}/experiencia`,
       priority: 0.9,
       changeFrequency: 'yearly',
       lastModified: new Date(),
       alternates: {
         languages: {
-          en: `${BASE_URL_ENV}/experience`,
-          ro: `${BASE_URL_ENV}/experienta`,
-          ca: `${BASE_URL_ENV}/experiencia`,
+          en: `${BASE_URL_ENV}/en/experience`,
+          ro: `${BASE_URL_ENV}/ro/experienta`,
+          ca: `${BASE_URL_ENV}/ca/experiencia`,
         },
       },
     },
     {
-      url: `${BASE_URL_ENV}/es/trabajos`,
+      url: `${BASE_URL_ENV}/trabajos`,
       lastModified: new Date(),
       priority: 0.9,
       changeFrequency: 'yearly',
       alternates: {
         languages: {
-          en: `${BASE_URL_ENV}/jobs`,
-          ro: `${BASE_URL_ENV}/locuri-de-munca`,
-          ca: `${BASE_URL_ENV}/feines`,
+          en: `${BASE_URL_ENV}/en/jobs`,
+          ro: `${BASE_URL_ENV}/ro/locuri-de-munca`,
+          ca: `${BASE_URL_ENV}/ca/feines`,
         },
       },
     },
