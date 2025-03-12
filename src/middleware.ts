@@ -27,5 +27,5 @@ export default function customMiddleware(req: NextRequest) {
 
 export const config = {
   // Match all paths except aquellos que no deberían ser internacionalizados
-  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)'],
+  matcher: ['/((?!api|_next|_vercel|.*/opengraph-image|.*\\..*).*)'],
 };
