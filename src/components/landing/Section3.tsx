@@ -2,13 +2,11 @@ import { useTranslations } from 'next-intl';
 
 import { HoverMouseButtonType } from '@/app/[locale]/components/cursor/HoverMouseButtonType';
 import { DivButtonMouse, JobCard, TitleSubtitleH2 } from '@/components';
-import type { LocaleI } from '@/i18n';
+import { Link } from '@/i18n';
 import { JobTradcutionI } from '@/interface';
 
-import { LinkCustom } from '../ui/LinkCustom';
-
 // Para manejar la internacionalización
-export const Section3 = ({ locale }: Readonly<{ locale: LocaleI }>) => {
+export const Section3 = () => {
   const t = useTranslations();
   const experiences: JobTradcutionI = t.raw('Jobs');
 
@@ -27,9 +25,8 @@ export const Section3 = ({ locale }: Readonly<{ locale: LocaleI }>) => {
       </div>
       <div className="mt-fl-xl flex justify-center bg-gradient-to-r from-blue-800 via-indigo-500 to-blue-500 p-fl-xl">
         <HoverMouseButtonType>
-          <LinkCustom
-            locale={locale}
-            href="jobs"
+          <Link
+            href="/jobs"
             className="text-fl-lg font-semibold dark:text-light-link"
           >
             <DivButtonMouse
@@ -41,7 +38,7 @@ export const Section3 = ({ locale }: Readonly<{ locale: LocaleI }>) => {
             >
               {experiences.link}
             </DivButtonMouse>
-          </LinkCustom>
+          </Link>
         </HoverMouseButtonType>
       </div>
     </section>

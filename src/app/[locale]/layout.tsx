@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
+import { NextIntlClientProvider } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
 import { Toaster } from '@/components/ui/sonner';
@@ -38,6 +40,7 @@ export async function generateMetadata({
     },
   };
 }
+
 export default async function LocaleLayout({
   children,
   params,
@@ -52,19 +55,23 @@ export default async function LocaleLayout({
   if (!routing.locales.includes(locale)) {
     notFound();
   }
+  const messages = await getMessages();
   return (
     <html lang={locale}>
       <body
         className="antialiased"
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider>
-          <SmoothScrolling>
-            <CustomCursor />
-            <Toaster />
-            {children}
-          </SmoothScrolling>
-        </ThemeProvider>
+        <NextIntlClientProvider messages={messages}>
+          <ThemeProvider>
+            <SmoothScrolling>
+              <CustomCursor />
+              <Toaster />
+
+              {children}
+            </SmoothScrolling>
+          </ThemeProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

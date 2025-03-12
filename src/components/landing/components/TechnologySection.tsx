@@ -1,6 +1,5 @@
-import Link from 'next/link';
-
 import { HoverMouseButtonType } from '@/app/[locale]/components/cursor/HoverMouseButtonType';
+import { Link } from '@/i18n';
 
 import { TecnologiesI } from '../data';
 import { CardTecnology } from './CardTecnology';
@@ -8,14 +7,14 @@ import { CardTecnology } from './CardTecnology';
 export const TechnologySection = ({
   title,
   technologies,
-  locale,
+
   legendText,
   className,
   linkClassName,
 }: {
   title: string;
   technologies: TecnologiesI[];
-  locale: string;
+
   legendText: string;
   className?: string;
   linkClassName?: string;
@@ -27,7 +26,7 @@ export const TechnologySection = ({
         <HoverMouseButtonType>
           <Link
             className={`${linkClassName} text-link text-fl-base font-extralight underline dark:text-dark-link`}
-            href={`/${locale}/legend`}
+            href="/legend"
             scroll={false}
           >
             {legendText}

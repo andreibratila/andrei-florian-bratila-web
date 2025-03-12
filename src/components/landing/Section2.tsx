@@ -1,7 +1,6 @@
 import { useTranslations } from 'next-intl';
 
 import { TitleSubtitleH2 } from '@/components';
-import type { LocaleI } from '@/i18n';
 
 import { TechnologySection } from './components/TechnologySection';
 import {
@@ -10,7 +9,7 @@ import {
   serverTechnologies,
 } from './data';
 
-export const Section2 = ({ locale }: { locale: LocaleI }) => {
+export const Section2 = () => {
   const t = useTranslations('Tecnologies');
 
   return (
@@ -20,7 +19,6 @@ export const Section2 = ({ locale }: { locale: LocaleI }) => {
       <TechnologySection
         title={t('frontend')}
         technologies={frontendTechnologies}
-        locale={locale}
         legendText={`${t('showLegend')}`}
         className="grid-cols-2 gap-x-fl-sm gap-y-fl-sm overflow-hidden md:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-7 2xl:gap-x-fl-md"
       />
@@ -28,7 +26,6 @@ export const Section2 = ({ locale }: { locale: LocaleI }) => {
         <TechnologySection
           title={t('backend')}
           technologies={backendTechnologies}
-          locale={locale}
           legendText={`${t('showLegend')}`}
           className="grid-cols-2 gap-x-fl-sm gap-y-fl-sm xl:grid-cols-3 xl:gap-x-fl-sm 2xl:grid-cols-3 2xl:gap-x-fl-md"
           linkClassName="md:hidden"
@@ -36,7 +33,6 @@ export const Section2 = ({ locale }: { locale: LocaleI }) => {
         <TechnologySection
           title={t('servidor')}
           technologies={serverTechnologies}
-          locale={locale}
           legendText={`${t('showLegend')}`}
           className="grid-cols-2 gap-x-fl-sm gap-y-fl-sm xl:grid-cols-3 xl:gap-x-fl-sm 2xl:grid-cols-3 2xl:gap-x-fl-md"
           linkClassName="md:hidden"

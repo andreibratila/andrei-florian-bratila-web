@@ -6,6 +6,7 @@ export const routing = defineRouting({
   locales: ['en', 'es', 'ro', 'ca'],
   // localePrefix: 'as-needed',
   localeDetection: true,
+
   // Used when no locale matches
   defaultLocale: 'es',
   pathnames: {
@@ -40,12 +41,6 @@ export const routing = defineRouting({
       ro: '/experienta',
       ca: '/experiencia',
     },
-    // '/cv': {
-    //   es: '/curriculum',
-    //   en: '/cv',
-    //   ro: '/cv',
-    //   ca: '/curriculum',
-    // },
     '/jobs': {
       es: '/trabajos',
       en: '/jobs',

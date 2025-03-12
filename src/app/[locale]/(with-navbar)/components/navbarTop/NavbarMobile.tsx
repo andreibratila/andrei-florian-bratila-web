@@ -5,8 +5,7 @@ import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
 import { HoverMouseButtonType } from '@/app/[locale]/components/cursor/HoverMouseButtonType';
-import { LinkCustom } from '@/components/ui/LinkCustom';
-import type { LocaleI } from '@/i18n';
+import { Link, type LocaleI } from '@/i18n';
 
 import ThemeSwitch from '../ThemeSwitch';
 import { LanguageSwitch } from './language-switch/LanguageSwitch';
@@ -53,39 +52,28 @@ export const NavbarMobile = ({
         <ul className="flex h-screen w-screen flex-col items-center justify-center space-y-6 text-2xl text-white">
           <li onClick={toggleMenu}>
             <HoverMouseButtonType>
-              <LinkCustom
-                className="text-dark-text dark:text-dark-text"
-                locale={locale}
-              >
+              <Link href="/" className="text-dark-text dark:text-dark-text">
                 {homeTraduction}
-              </LinkCustom>
+              </Link>
             </HoverMouseButtonType>
           </li>
           <li onClick={toggleMenu}>
             <HoverMouseButtonType>
-              <LinkCustom
-                className="text-dark-text dark:text-dark-text"
-                locale={locale}
-                href="jobs"
-              >
+              <Link className="text-dark-text dark:text-dark-text" href="/jobs">
                 {jobsTraduction}
-              </LinkCustom>
+              </Link>
             </HoverMouseButtonType>
           </li>
           <li onClick={toggleMenu}>
             <HoverMouseButtonType>
-              <LinkCustom
+              <Link
                 className="text-dark-text dark:text-dark-text"
-                locale={locale}
-                href="certificates"
+                href="/certificates"
               >
                 {certificatesTraduction}
-              </LinkCustom>
+              </Link>
             </HoverMouseButtonType>
           </li>
-          {/* <li>
-            <LanguageSwitchMobile locale={locale} />
-          </li> */}
         </ul>
       </div>
     </>

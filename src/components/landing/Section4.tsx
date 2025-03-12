@@ -2,12 +2,10 @@ import { useTranslations } from 'next-intl';
 
 import { HoverMouseButtonType } from '@/app/[locale]/components/cursor/HoverMouseButtonType';
 import { CertificateCard, DivButtonMouse, TitleSubtitleH2 } from '@/components';
-import type { LocaleI } from '@/i18n';
+import { Link } from '@/i18n';
 import type { CertificateTraductionI } from '@/interface';
 
-import { LinkCustom } from '../ui/LinkCustom';
-
-export const Section4 = ({ locale }: Readonly<{ locale: LocaleI }>) => {
+export const Section4 = () => {
   const t = useTranslations();
   const certificates: CertificateTraductionI = t.raw('Certificates');
 
@@ -29,21 +27,21 @@ export const Section4 = ({ locale }: Readonly<{ locale: LocaleI }>) => {
       {/* Botón de Ver Todos */}
       <div className="mt-fl-xl flex justify-center bg-gradient-to-r from-blue-500 via-indigo-500 to-blue-800 p-fl-xl">
         <HoverMouseButtonType>
-          <LinkCustom
-            locale={locale}
-            href="certificates"
+          <Link
+            // locale={locale}
+            href="/certificates"
             className="text-fl-lg font-semibold dark:text-light-link"
           >
             <DivButtonMouse
               durationAnimation={0.4}
               divBg="bg-dark-bg"
-              divText="text-dark-text"
+              divText="text-dark-text text-center"
               // divText="text-light-text"
               className="grid h-full w-full place-items-center rounded-xl border-2 border-dark-bg bg-light-bg px-fl-xs py-fl-3xs shadow-[3px_3px_0px_black]"
             >
               {certificates.link}
             </DivButtonMouse>
-          </LinkCustom>
+          </Link>
         </HoverMouseButtonType>
       </div>
     </section>

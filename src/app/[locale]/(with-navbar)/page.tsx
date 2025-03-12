@@ -1,5 +1,3 @@
-import { setRequestLocale } from 'next-intl/server';
-
 import { ScrollVelocity } from '@/components';
 import {
   Section1,
@@ -8,19 +6,11 @@ import {
   Section4,
   Section5,
 } from '@/components/landing';
-import { LocaleI } from '@/i18n';
 
-export default async function Home({
-  params,
-}: Readonly<{
-  params: Promise<{ locale: LocaleI }>;
-}>) {
-  const locale = (await params).locale;
-  setRequestLocale(locale);
-
+export default async function Home() {
   return (
     <>
-      <Section1 locale={locale} />
+      <Section1 />
       <ScrollVelocity
         texts={[
           '📚 Continuous Learning  - 💡 Creativity - 🎯 Focus - 🤔 Critical Thinking - 🔍 Attention to Detail -',
@@ -29,9 +19,9 @@ export default async function Home({
         velocity={80}
         classNameSection="bg-gradient-to-r from-blue-500 via-indigo-500 to-blue-800 py-fl-xs flex flex-col space-y-fl-2xs text-white"
       />
-      <Section2 locale={locale} />
-      <Section3 locale={locale} />
-      <Section4 locale={locale} />
+      <Section2 />
+      <Section3 />
+      <Section4 />
       <Section5 />
       {/* <Squares /> */}
     </>

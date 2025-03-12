@@ -1,8 +1,7 @@
 import { useTranslations } from 'next-intl';
 
 import { HoverMouseButtonType } from '@/app/[locale]/components/cursor/HoverMouseButtonType';
-import { LinkCustom } from '@/components/ui/LinkCustom';
-import type { LocaleI } from '@/i18n';
+import { Link, type LocaleI } from '@/i18n';
 
 import ThemeSwitch from '../ThemeSwitch';
 import { LanguageSwitch } from './language-switch/LanguageSwitch';
@@ -17,34 +16,35 @@ export const NavbarPc = ({ locale }: { locale: LocaleI }) => {
         <ul className="flex space-x-fl-xs">
           <li>
             <HoverMouseButtonType>
-              <LinkCustom
+              <Link
+                href="/"
                 locale={locale}
                 className="text-dark-text dark:text-dark-text"
               >
                 {t('home')}
-              </LinkCustom>
+              </Link>
             </HoverMouseButtonType>
           </li>
           <li>
             <HoverMouseButtonType>
-              <LinkCustom
+              <Link
                 locale={locale}
-                href="jobs"
+                href="/jobs"
                 className="text-dark-text dark:text-dark-text"
               >
                 {t('jobs')}
-              </LinkCustom>
+              </Link>
             </HoverMouseButtonType>
           </li>
           <li>
             <HoverMouseButtonType>
-              <LinkCustom
+              <Link
                 locale={locale}
-                href="certificates"
+                href="/certificates"
                 className="text-dark-text dark:text-dark-text"
               >
                 {t('certificates')}
-              </LinkCustom>
+              </Link>
             </HoverMouseButtonType>
           </li>
           <li>

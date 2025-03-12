@@ -11,12 +11,11 @@ import Image from 'next/image';
 import { HoverMouseButtonType } from '@/app/[locale]/components/cursor/HoverMouseButtonType';
 import { DivButtonMouse } from '@/components';
 import { EMAIL_ENV, GITHUB_URL_ENV, LINKEDIN_URL_ENV } from '@/config';
-import type { LocaleI } from '@/i18n';
+import { Link } from '@/i18n';
 
 import { SalutingHand } from '../Saludo';
-import { LinkCustom } from '../ui/LinkCustom';
 
-export const Section1 = ({ locale }: Readonly<{ locale: LocaleI }>) => {
+export const Section1 = () => {
   const t = useTranslations('LandingSection1'); // Traducciones específicas para esta página
   return (
     <section className="flex flex-col pt-fl-3xl 2xl:container max-2xl:mx-fl-3xs-3xl">
@@ -36,7 +35,7 @@ export const Section1 = ({ locale }: Readonly<{ locale: LocaleI }>) => {
           </div>
           <div className="mt-fl-lg flex flex-col max-md:space-y-fl-xs md:flex-row md:space-x-fl-md">
             <HoverMouseButtonType>
-              <LinkCustom locale={locale} href="/cv-download" scroll={false}>
+              <Link href="/cv-download" scroll={false}>
                 <DivButtonMouse
                   durationAnimation={0.5}
                   className="inline-flex place-items-center rounded-xl border-2 border-dark-bg px-fl-xs py-fl-3xs shadow-[3px_3px_0px_black] dark:border-light-bg dark:shadow-[3px_3px_0px_#F7F7F7]"
@@ -51,7 +50,7 @@ export const Section1 = ({ locale }: Readonly<{ locale: LocaleI }>) => {
                     </span>
                   </span>
                 </DivButtonMouse>
-              </LinkCustom>
+              </Link>
             </HoverMouseButtonType>
 
             <div className="flex space-x-fl-xs">

@@ -20,7 +20,6 @@ export default async function NavbarsLayout({
     <div className="bg-light-bg text-light-text dark:bg-dark-bg dark:text-dark-text">
       {modal}
       <Navbar locale={locale} />
-      {/* <NavbarTop locale={locale} /> */}
       {children}
       <Footer />
     </div>
